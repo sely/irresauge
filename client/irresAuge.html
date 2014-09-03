@@ -18,7 +18,7 @@
 <template name="map">
 	<div id="map">
 		{{#each cells}}
-			<div class="cell {{mode}}" id="cell_{{x}}_{{y}}" title="{{x}} {{y}}">
+			<div class="cell cellstatus_{{status}} cellmode_{{mode}}" id="cell_{{x}}_{{y}}" title="{{x}} {{y}}">
 			{{x}} {{y}}
 			</div>
 		{{/each}}

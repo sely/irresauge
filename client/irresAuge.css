@@ -14,3 +14,35 @@
 	border: 1px solid black;
 }
 
+.cellmode_0 {
+	background-color: transparent;
+}
+
+.cellmode_1 {
+	background-color: #A6A8FF;
+}
+
+.cellmode_2 {
+	background-color: #5C5FFF;
+}
+
+.cellmode_3 {
+	background-color: #3035FF;
+}
+
+.cellmode_4 {
+	background-color: #49FF30;
+}
+
+.cellstatus_p {
+	background-color: #000;
+}
+
+
+.cellstatus_t {
+	background-color: #474747;
+}
+
+.cellstatus_g {
+	background-color: #3E0070;
+}

@@ -17,6 +17,11 @@ Template.map.cells = function () {
 	return mapcells;
 }
 
+Template.map.events({
+	'click .cellstatus_n': function (e,t) {
+
+	},
+);
 
 mapcells = [];
 
@@ -30,7 +35,8 @@ var createCell = function (i, j) {
 	return {
 		x: j + 1,
 		y: i + 1,
-		mode: -1,
+		mode: 0,
+		status: 'n',
 		player: [],
 	};
 } 
