@@ -1,0 +1,2 @@
+)]}'
+{"version":3,"file":"generated.css","sources":["client/irresAuge.css"],"names":[],"mappings":"AAAA,8BAA8B;;AAC9B;EACC,YAAY;EACZ,aAAa;EACb,qBAAqB;;;AAGtB;EACC,WAAW;EACX,YAAY;EACZ,WAAW;EACX,cAAc;EACd,sBAAsB;EACtB,uBAAuB","sourcesContent":["/* CSS declarations go here */\n#map {\n\twidth: 800px;\n\theight: 800px;\n\tdisplay: inline-block;\n}\n\n.cell{\n\twidth: 20px;\n\theight: 20px;\n\tfloat: left;\n\tfont-size: 8px;\n\tbox-sizing: border-box;\n\tborder: 1px solid black;\n}\n\n"]}
