@@ -32,7 +32,23 @@ for (var i = 0; i < mapSize ; i ++) {
 }
 
 //create all the palaces
+/*
+palaces.push(createPalace( "1",  9,  9, 8));
+palaces.push(createPalace( "2", 16, 21, 8));
+palaces.push(createPalace( "3", 23, 33, 8));
+palaces.push(createPalace( "4", 22,  7, 8));
+palaces.push(createPalace( "5", 29, 19, 8));
+palaces.push(createPalace( "6", 36, 31, 8));
+palaces.push(createPalace( "7", 12, 36, 8));
 
+
+palaces.push(createPalace( "8", 35,  0, 8));
+palaces.push(createPalace( "9",  4, 38, 8));
+palaces.push(createPalace("10", 37, 11, 8));
+palaces.push(createPalace("11",  3, 23, 8));
+
+palaceDep.changed();
+*/
 //calcualte what is visible
 Deps.autorun(function() {
 	palaceDep.depend();
@@ -90,8 +106,10 @@ Template.cell.position = function () {
 Template.cell.visibleCss = function () {
 	if (this.palaces.length > 0) {
 		return "background: green;"
-	} else if (this.visibleBy.length > 0) {
+	} else if (this.visibleBy.length == 1) {
 		return "background: lightblue;";
+	} else if (this.visibleBy.length > 1) {
+		return "background: #0099FF;";
 	} else {
 		return "background: white;";
 	}
